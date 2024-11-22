@@ -1,10 +1,14 @@
 #include <stdio.h>
 
-void print() {
-	printf("Hello, World!\n");
+int sum(int a, int b) {
+	return a + b;
+}
+
+void print(int printable) {
+	printf("%d\n", printable);
 }
 
 int main() {
-	print();
+	print(sum(1, 2));
 	return 0;
 }
